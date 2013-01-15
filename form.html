@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <title>Online Adhar Card Form</title>
+    <script>
+        function validate()
+        {
+        }
+    </script>
+</head>
+<body>
+    <form action="submit.php" method="post">
+        <img src="bgimage.gif" style="float: left" width="100" height="100" alt="embblem of india"/>
+        <center> <img  style=" height 200px; width: 500px" src="logo%20(1).png"  />
+
+        <img style=" float:right;height: 100px;width: 100px" src="uid_logo.jpg" /></center>
+        <h2><center>AADHAAR ENROLMENT / CORRECTION FORM</center></h2>
+        <center><h5 style="color: red">(Aadhaar Enrolment is free and voluntery.Correction within 96 hours of enrolment is also free.<br>
+                      No charges are applicable for form and Aadhaar Enrolment.In case of correction provide ur EID,
+                      Name and only that field which needs correction.)</h5></center>
+        <h4><center>(Please follow the instructions overleaf while filling up the form.Use capital letters <only></only></center></h4>
+         <center>(<strong>Note:</strong> The * field Indicates Mandatory to Fill)</center>
+        <center>
+       <table border="3">
+         <tr>
+            <td>1.Pre-Enrolment ID:<input type="text" name="eid"></td>
+            &nbsp; &nbsp;&nbsp;&nbsp;<td>2.NPR reciept/TIN number:<input type="text" name="tno"></td>
+        </tr>
+       <tr><td>3.Full Name*:<input type="text" name="fn"></td></tr>
+       <tr><td>
+           <div data-role="fieldcontain">
+           <fieldset data-role="controlgroup">
+               <legend>4.Gender*:</legend>
+               <input type="radio" name="radio-choice-2" id="radio-choice-21" value="choice-1" checked="checked" />
+               <label for="radio-choice-21">Male</label>
+
+               <input type="radio" name="radio-choice-2" id="radio-choice-22" value="choice-2"  />
+               <label for="radio-choice-22">Female</label>
+
+           </fieldset>
+       </div>
+           <td>5.Age/DOB*:<input type="text" name="age"></td>
+       </tr>
+       <tr>
+           <td>
+               6.Address Details<br>
+                 <tr><td>House No./Bldg/Apt:<input type="text" name="hno"></td>
+                     <td>Street/Road/Lane:<input type="text" name="road"></td>
+                   </tr>
+                 <tr>
+                     <td>Village/Town/City*:<input type="text" name="city"></td>
+                     <td>Area/Location/Sector:<input type="text" name="area"></td>
+                 </tr>
+                   <tr>
+                       <td>Landmark:<input type="text" name="land"></td>
+                       <td>Post Office:<input type="text" name="post"></td>
+                   </tr>
+                 <tr>
+                     <td>District*:<input type="text" name="dist"></td>
+                     <td>State*:<input type="text" name="state"></td>
+                 </tr>
+                <tr><td>Email:<input type="text" name="email"></td>
+                      <td>Mobile:<input type="text" name="mobile"></td>
+                      <td>PIN CODE*:<input type="text" name="pin"></td>
+                   </tr>
+
+           </td>
+       </tr>
+       <tr>
+           <td><div data-role="fieldcontain">
+               <fieldset data-role="controlgroup">
+                   <legend>7.Details Of:</legend>
+                   <input type="radio" name="radio-choice-2" id="radio-choice-23" value="choice-1" checked="checked" />
+                   <label for="radio-choice-23">Father</label>
+
+                   <input type="radio" name="radio-choice-2" id="radio-choice-24" value="choice-2"  />
+                   <label for="radio-choice-24">Mother</label>
+                   <input type="radio" name="radio-choice-2" id="radio-choice-25" value="choice-3"  />
+                   <label for="radio-choice-25">Guardian</label>
+                   <input type="radio" name="radio-choice-2" id="radio-choice-26" value="choice-4"  />
+                   <label for="radio-choice-26">Husband</label>
+                   <input type="radio" name="radio-choice-2" id="radio-choice-27" value="choice-5"  />
+                   <label for="radio-choice-27">Wife</label>
+
+               </fieldset>
+           </div>
+              </td>
+            <tr><td>Name:<input type="text" name="n"><br></td></tr>
+            <tr><td>EID/Aadhaar No.:<input type="text" name="an"></td></tr>
+       </tr>
+       <tr><td>
+           <div data-role="fieldcontain">
+               <fieldset data-role="controlgroup">
+                   <legend>8.I have no objection to the UIDAI sharing information by me to the UIDAI with agencies engaged in delivery of welfare services.</legend>
+                   <input type="radio" name="radio-choice-2" id="radio-choice-40" value="choice-1" checked="checked" />
+                   <label for="radio-choice-40">Yes</label>
+
+                   <input type="radio" name="radio-choice-2" id="radio-choice-41" value="choice-2"  />
+                   <label for="radio-choice-41">No</label>
+                  </td></tr>
+       <tr>
+           <td>
+               <div data-role="fieldcontain">
+                   <fieldset data-role="controlgroup">
+                       <legend> 9.Select One of the bellow(OPTIONAL):</legend>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-42" value="choice-1" checked="checked" />
+                       <label for="radio-choice-42"></label>
+
+                       <input type="radio" name="radio-choice-2" id="radio-choice-43" value="choice-2"  />
+                       <label for="radio-choice-43"></label
+
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <div data-role="fieldcontain">
+                   <fieldset data-role="controlgroup">
+                       <legend> Verification Type:</legend>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-28" value="choice-1" checked="checked" />
+                       <label for="radio-choice-28">Document Based</label>
+
+                       <input type="radio" name="radio-choice-2" id="radio-choice-29" value="choice-2"  />
+                       <label for="radio-choice-29">Introducer Based</label>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-30" value="choice-3"  />
+                       <label for="radio-choice-30">Head of Familly</label>
+                       (<strong>Note:</strong> Select One of the above.Select Introduce or head of familly only if u do not possess any documentory proof of identity and/or address)
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <div data-role="fieldcontain">
+                   <fieldset data-role="controlgroup">
+                       <legend> 10.Write name of the documents produced.Refer back side of this form for list of valid document:</legend>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-31" value="choice-1" checked="checked" />
+                       <label for="radio-choice-31">a.POI</label>
+
+                       <input type="radio" name="radio-choice-2" id="radio-choice-32" value="choice-2"  />
+                       <label for="radio-choice-32">b.POA</label>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-33" value="choice-3"  />
+                       <label for="radio-choice-33">c.DOB</label>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-34" value="choice-4"  />
+                       <label for="radio-choice-34">d.POR</label>
+
+       </tr>
+       <tr>
+           <td>
+               11.Introducer's Aadhaar Number: <input type="text" name="ian">
+           </td>
+           <td>
+               <div data-role="fieldcontain">
+                   <fieldset data-role="controlgroup">
+                       <legend>For HoF based-Details of:</legend>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-35" value="choice-1" checked="checked" />
+                       <label for="radio-choice-35">Father</label>
+
+                       <input type="radio" name="radio-choice-2" id="radio-choice-36" value="choice-2"  />
+                       <label for="radio-choice-36">Mother</label>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-37" value="choice-3"  />
+                       <label for="radio-choice-37">Guardian</label>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-38" value="choice-4"  />
+                       <label for="radio-choice-38">Husband</label>
+                       <input type="radio" name="radio-choice-2" id="radio-choice-39" value="choice-5"  />
+                       <label for="radio-choice-39">Wife.</label>
+
+               HoF's Eid/Aadhaar No. <input type="text" name="han">
+           </td>
+       </tr>
+       <tr>
+           <td>
+               I hereby confirm the identity and address of  <input type="text" name="ian"> as being true.correct and accurate.<br><br><br>
+               Introducer/HoF's Nmae: <input type="text" name="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature of Introducer/HoF
+           </td>
+       </tr>
+        </table>
+    </center>
+    <br>
+    <br>
+     <strong><center><div data-role="fieldcontain">
+         <fieldset data-role="controlgroup">
+             <legend>Agree to the terms:</legend>
+             <input type="checkbox" name="checkbox" id="checkbox" class="custom" />
+             <label for="checkbox">I agree</label>
+         </fieldset>
+     </div>I confirm that the information provided by me to the UIDAI and the information contained herein is my own and is true,correct and accurate.</center></strong>
+    <br>
+    <br>
+
+    <center><strong>(Applicant's Signature/Thumbprint.)</strong></center><br>
+   <br>
+   <br>
+    <center><a href="home.php" data-role="button" data-inline="true" >Cancel</a>
+    <a href="submit.php" onclick="validate()" data-role="button" data-inline="true" data-theme="b" data-target="_blank" dat-direction="reverse" dat-transition="pop">Submit</a></center>
+    </form>
+</body>
+</html>
